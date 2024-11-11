@@ -1,28 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/aplikasiku.dart';
+import 'package:perpus_flutter/view/book_list_view.dart';
 
-
-
-
-void main(){
-  runApp(const MyApp());
+void main() {
+  runApp(MyApp());
 }
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  
 
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Aplikasi Perpustakaan',
       theme: ThemeData(
-=-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(225, 63, 38, 105)),
-        useMaterial3: true,
-
+        primarySwatch: Colors.blue,
       ),
-      home: ()MyApp,
-
+      home: BookListView(),
     );
   }
 }
